@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         var userIsInTheMiddleOfTyping = false
         
 
-        @IBAction func touchDigit(sender: UIButton) {
+        @IBAction func touchDigit(_ sender: UIButton) {
                 let digit = sender.currentTitle!
        
                 if userIsInTheMiddleOfTyping {
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         }
         
         
-        @IBAction func performOperation(sender: UIButton) {
+        @IBAction func performOperation(_ sender: UIButton) {
                 
                 userIsInTheMiddleOfTyping = false
                 if let mathematicalSymbol = sender.currentTitle { //using optional binding to prevent app from crashing
@@ -46,6 +46,10 @@ class ViewController: UIViewController {
                 }
                 
         }
+
+
+
+
 
 }
 
