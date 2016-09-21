@@ -8,6 +8,23 @@
 
 import Foundation
 
+func add(op1: Double, op2: Double) -> Double {
+        return op1 + op2
+}
+
+func subtract(op1: Double, op2: Double) -> Double {
+        return op1 - op2
+}
+
+func multiply(op1: Double, op2: Double) -> Double {
+        return op1 * op2
+}
+
+func divide(op1: Double, op2: Double) -> Double {
+        return op1 / op2
+}
+
+
 class CalculatorBrain {
         
         private var accumulator = 0.0
@@ -17,9 +34,17 @@ class CalculatorBrain {
         }
         
         private var operations: Dictionary<String, Operation> = [
-                "π" : Operation.constant(M_PI),//M_PI,
-                "√" : Operation.unaryFunction(sqrt), //sqrt()
-                "cos": Operation.unaryFunction(cos)
+                "π"  : Operation.constant(M_PI),
+                "e"  : Operation.constant(M_E),
+                "√"  : Operation.unaryFunction(sqrt),
+                "cos": Operation.unaryFunction(cos),
+                "sin": Operation.unaryFunction(sin),
+                "+"  : Operation.binaryFunction(add),
+                "−"  : Operation.binaryFunction(subtract),
+                "×"  : Operation.binaryFunction(multiply),
+                "÷"  : Operation.binaryFunction(divide),
+                "="  : Operation.equals
+                
                 
         ]
         
@@ -27,6 +52,8 @@ class CalculatorBrain {
         enum Operation {
                 case constant(Double)
                 case unaryFunction((Double) -> Double)
+                case binaryFunction((Double, Double) -> Double)
+                case equals
         }
         func performOperation(_ symbol: String) {
                 
@@ -35,10 +62,32 @@ class CalculatorBrain {
                         case .constant (let value): accumulator = value
                         case .unaryFunction (let function):
                                 accumulator = function(accumulator)
+                        case .binaryFunction(let function):
+                               executeBinaryOperation()
+                                pending = PendingBinaryFunctionInfo(binaryFunction: function, firstOperand: accumulator)
+                        case .equals:
+                                executeBinaryOperation()
                
                         }
                 }
                 
+                
+        }
+        
+        private func executeBinaryOperation() {
+                if pending != nil {
+                        accumulator = pending!.binaryFunction(pending!.firstOperand, accumulator)
+                        pending = nil
+                        
+                }
+                
+        }
+        
+        private var pending: PendingBinaryFunctionInfo?
+        
+        private struct PendingBinaryFunctionInfo {
+                var binaryFunction: (Double, Double) -> Double
+                var firstOperand: Double
                 
         }
         
