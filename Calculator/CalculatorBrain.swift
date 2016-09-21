@@ -23,10 +23,10 @@ class CalculatorBrain {
                 "√"  : Operation.unaryFunction(sqrt),
                 "cos": Operation.unaryFunction(cos),
                 "sin": Operation.unaryFunction(sin),
-                "+"  : Operation.binaryFunction({(op1: Double, op2:Double) -> Double in return op1 + op2}),
-                "−"  : Operation.binaryFunction({(op1: Double, op2:Double) -> Double in return op1 - op2}),
-                "×"  : Operation.binaryFunction({(op1: Double, op2:Double) -> Double in return op1 * op2}),
-                "÷"  : Operation.binaryFunction({(op1: Double, op2:Double) -> Double in return op1 / op2}),
+                "+"  : Operation.binaryFunction({$0 + $1}),
+                "−"  : Operation.binaryFunction({$0 - $1}),
+                "×"  : Operation.binaryFunction({$0 * $1}),
+                "÷"  : Operation.binaryFunction({$0 / $1}),
                 "="  : Operation.equals
                 
                 
