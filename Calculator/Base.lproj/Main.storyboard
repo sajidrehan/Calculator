@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,139 +15,175 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1F-ar-F7s">
-                                <rect key="frame" x="119" y="87" width="64" height="64"/>
-                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="calibratedRGB"/>
+                                <frame key="frameInset" minX="119" minY="87" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="7">
-                                    <color key="titleColor" red="0.012520032051282048" green="0.012520032051282048" blue="0.012520032051282048" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.012520032051282048" green="0.012520032051282048" blue="0.012520032051282048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LYa-pk-UFv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AB-30-7e9">
-                                <rect key="frame" x="191" y="87" width="64" height="64"/>
-                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="calibratedRGB"/>
+                                <frame key="frameInset" minX="191" minY="87" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="8">
-                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xi8-R0-9Qx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3p4-48-yyW">
-                                <rect key="frame" x="263" y="87" width="64" height="64"/>
-                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="calibratedRGB"/>
+                                <frame key="frameInset" minX="263" minY="87" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="9">
-                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nvA-v9-fbV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZP-mb-Cjp">
-                                <rect key="frame" x="119" y="159" width="64" height="64"/>
-                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="calibratedRGB"/>
+                                <frame key="frameInset" minX="119" minY="159" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="4">
-                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="idr-Rv-ADM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X04-pg-WPY">
-                                <rect key="frame" x="191" y="159" width="64" height="64"/>
-                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="calibratedRGB"/>
+                                <frame key="frameInset" minX="191" minY="159" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="5">
-                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nZL-Ry-Hq5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4UG-8G-EyC">
-                                <rect key="frame" x="263" y="159" width="64" height="64"/>
-                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="calibratedRGB"/>
+                                <frame key="frameInset" minX="263" minY="159" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="6">
-                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aoP-vF-9u1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sch-U7-5he">
-                                <rect key="frame" x="119" y="231" width="64" height="64"/>
-                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="calibratedRGB"/>
+                                <frame key="frameInset" minX="119" minY="231" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="1">
-                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mgF-bK-1jl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQB-9e-Svn">
-                                <rect key="frame" x="191" y="231" width="64" height="64"/>
-                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="calibratedRGB"/>
+                                <frame key="frameInset" minX="191" minY="231" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="2">
-                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hgo-3z-jZ4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRp-tf-KPz">
-                                <rect key="frame" x="191" y="303" width="64" height="64"/>
-                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="calibratedRGB"/>
+                                <frame key="frameInset" minX="191" minY="303" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="0">
-                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9cq-7W-2Ph"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79e-J7-zob">
-                                <rect key="frame" x="263" y="231" width="64" height="64"/>
-                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="calibratedRGB"/>
+                                <frame key="frameInset" minX="263" minY="231" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86564503205128207" green="0.86564503205128207" blue="0.86564503205128207" alpha="0.92774784482758621" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="3">
-                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L24-eQ-Nb6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="f3L-Pn-mdJ">
-                                <rect key="frame" x="96" y="41" width="231" height="38"/>
-                                <color key="backgroundColor" red="0.27026370523233245" green="0.29497195512820518" blue="0.28650689009226638" alpha="1" colorSpace="calibratedRGB"/>
+                                <frame key="frameInset" minX="96" minY="41" width="231" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27026370523233245" green="0.29497195512820518" blue="0.28650689009226638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cm5-mS-D3U">
-                                <rect key="frame" x="47" y="87" width="64" height="64"/>
-                                <color key="backgroundColor" red="0.86564503209999999" green="0.86564503209999999" blue="0.86564503209999999" alpha="0.92774784480000005" colorSpace="calibratedRGB"/>
+                                <frame key="frameInset" minX="47" minY="87" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86564503209999999" green="0.86564503209999999" blue="0.86564503209999999" alpha="0.92774784480000005" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="π">
-                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhR-8t-jMM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xts-MW-h48">
+                                <frame key="frameInset" minX="47" minY="159" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86564503209999999" green="0.86564503209999999" blue="0.86564503209999999" alpha="0.92774784480000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="√">
+                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4yJ-1g-1vX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgx-a7-zUK">
+                                <frame key="frameInset" minX="47" minY="231" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86564503209999999" green="0.86564503209999999" blue="0.86564503209999999" alpha="0.92774784480000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="cos">
+                                    <color key="titleColor" red="0.012520032049999999" green="0.012520032049999999" blue="0.012520032049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IOn-T8-zEU"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="display" destination="f3L-Pn-mdJ" id="L8t-bm-8lt"/>
@@ -154,7 +191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="67" y="279"/>
+            <point key="canvasLocation" x="-413" y="191"/>
         </scene>
     </scenes>
 </document>
