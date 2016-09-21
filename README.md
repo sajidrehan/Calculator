@@ -24,10 +24,11 @@ Point 2: Also the closures in Swift have default argument names $0(first argumen
 So we can write the above closure as
 {($0, $1) in return $0 + $1}
 
-Point 3: Since I am using defult argument names Swift says I dont need ($0, $1) so above closures can be written as
+Point 3: Since I am using defult argument names Swift says I dont need ($0, $1) and there is only one statement in closure so above closure can be written as
 {return $0 + $1}
 
-Point 4: Since $0 + $1 is a double and Swift infers that closure returns Double and it is the only statement so we can write it as
+Point 4: Since $0 + $1 is a double and Swift infers that closure returns Double so we can write it as
+
 {$0 + $1}
 
 
