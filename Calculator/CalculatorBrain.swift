@@ -8,22 +8,6 @@
 
 import Foundation
 
-func add(op1: Double, op2: Double) -> Double {
-        return op1 + op2
-}
-
-func subtract(op1: Double, op2: Double) -> Double {
-        return op1 - op2
-}
-
-func multiply(op1: Double, op2: Double) -> Double {
-        return op1 * op2
-}
-
-func divide(op1: Double, op2: Double) -> Double {
-        return op1 / op2
-}
-
 
 class CalculatorBrain {
         
@@ -39,10 +23,10 @@ class CalculatorBrain {
                 "√"  : Operation.unaryFunction(sqrt),
                 "cos": Operation.unaryFunction(cos),
                 "sin": Operation.unaryFunction(sin),
-                "+"  : Operation.binaryFunction(add),
-                "−"  : Operation.binaryFunction(subtract),
-                "×"  : Operation.binaryFunction(multiply),
-                "÷"  : Operation.binaryFunction(divide),
+                "+"  : Operation.binaryFunction({(op1: Double, op2:Double) -> Double in return op1 + op2}),
+                "−"  : Operation.binaryFunction({(op1: Double, op2:Double) -> Double in return op1 - op2}),
+                "×"  : Operation.binaryFunction({(op1: Double, op2:Double) -> Double in return op1 * op2}),
+                "÷"  : Operation.binaryFunction({(op1: Double, op2:Double) -> Double in return op1 / op2}),
                 "="  : Operation.equals
                 
                 
